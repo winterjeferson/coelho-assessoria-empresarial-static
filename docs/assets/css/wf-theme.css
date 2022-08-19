@@ -1,0 +1,34 @@
+/* ------------------------------------------------------------------ SOCIAL */
+.grid {
+  display: grid;
+  grid-template: "grid__header grid__header" min-content "grid__content grid__content" auto "grid__footer grid__footer" min-content / auto;
+  height: 100%; }
+  @media (min-width: 1024px) {
+    .grid {
+      grid-template: "grid__header grid__header" min-content "grid__content grid__content" auto "grid__footer grid__footer" min-content / 250px auto; } }
+  .grid__header {
+    background-color: #36434b;
+    grid-area: grid__header; }
+  .grid__content {
+    grid-area: grid__content; }
+  .grid__footer {
+    background-color: #36434b;
+    grid-area: grid__footer; }
+
+* {
+  font-family: sans-serif; }
+
+.grid__header .header {
+  align-items: center;
+  justify-content: space-between; }
+
+.grid__header .button {
+  border: 0;
+  border-radius: 0; }
+
+.grid__header .button-wrapper .button {
+  background-color: transparent;
+  color: #ffffff;
+  margin: 0; }
+  .grid__header .button-wrapper .button:hover {
+    background-color: #0b0e10; }

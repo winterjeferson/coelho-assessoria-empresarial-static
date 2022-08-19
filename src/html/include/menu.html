@@ -1,0 +1,35 @@
+{% set arr = [
+    {
+        href: 'home',
+        text: 'Início'
+    },
+    {
+        href: 'product',
+        text: 'Produtos e Serviços'
+    },
+    {
+        href: 'contact',
+        text: 'Contato'
+    }
+] %}
+
+<div class="row header">
+    <a href="index.html" class="logo button button--regular button--white" aria-label="home">
+        <img src="./assets/img/logo/logo.png" alt="coelho assessoria">
+    </a>
+    <div class="button-wrapper">
+        <button type="button" class="button button--big button--regular--proportional toggle-menu"
+            aria-label="Menu">
+            <svg class="icon icon--regular">
+                <use xlink:href="./assets/img/icon.svg#menu"></use>
+            </svg>
+        </button>
+        <nav class="row toggle-menu__content">
+            {% for item in arr %}
+            <a href="#{{item.href}}" class="button button--regular button--white">
+                {{item.text}}
+            </a>
+            {% endfor %}
+        </nav>
+    </div>
+</div>
