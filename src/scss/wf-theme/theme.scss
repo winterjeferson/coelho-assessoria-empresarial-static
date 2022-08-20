@@ -1,7 +1,8 @@
+$margin-content: 200px;
+
 * {
     font-family: sans-serif;
 }
-
 
 .grid__header {
     .header {
@@ -25,10 +26,43 @@
             }
         }
     }
+}
 
-    .logo {}
+.grid__carousel {}
 
-    .button-wrapper {}
+.grid__content {
+    .title {
+        color: $color-orange;
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .about {
+        .flag {
+            margin: 40px auto;
+            display: grid;
+            grid-column-gap: 10px;
+            grid-template-columns: repeat(6, 1fr);
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    .service {
+        margin-top: $margin-content;
+
+        svg {
+            fill: #bec3c7;
+            height: 150px;
+        }
+    }
+
+    .contact {
+        margin-top: $margin-content;
+    }
 }
 
 // strong {

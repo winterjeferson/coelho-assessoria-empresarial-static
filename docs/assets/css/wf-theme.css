@@ -1,14 +1,16 @@
 /* ------------------------------------------------------------------ SOCIAL */
 .grid {
   display: grid;
-  grid-template: "grid__header grid__header" min-content "grid__content grid__content" auto "grid__footer grid__footer" min-content / auto;
+  grid-template: "grid__header grid__header" min-content "grid__carousel grid__carousel" auto "grid__content grid__content" auto "grid__footer grid__footer" min-content / auto;
   height: 100%; }
   @media (min-width: 1024px) {
     .grid {
-      grid-template: "grid__header grid__header" min-content "grid__content grid__content" auto "grid__footer grid__footer" min-content / 250px auto; } }
+      grid-template: "grid__header grid__header" min-content "grid__carousel grid__carousel" auto "grid__content grid__content" auto "grid__footer grid__footer" min-content / 250px auto; } }
   .grid__header {
     background-color: #36434b;
     grid-area: grid__header; }
+  .grid__carousel {
+    grid-area: grid__carousel; }
   .grid__content {
     grid-area: grid__content; }
   .grid__footer {
@@ -32,3 +34,26 @@
   margin: 0; }
   .grid__header .button-wrapper .button:hover {
     background-color: #0b0e10; }
+
+.grid__content .title {
+  color: #e77e22;
+  font-size: 3rem;
+  text-align: center; }
+
+.grid__content .about .flag {
+  margin: 40px auto;
+  display: grid;
+  grid-column-gap: 10px;
+  grid-template-columns: repeat(6, 1fr); }
+  .grid__content .about .flag img {
+    max-width: 100%;
+    height: auto; }
+
+.grid__content .service {
+  margin-top: 200px; }
+  .grid__content .service svg {
+    fill: #bec3c7;
+    height: 150px; }
+
+.grid__content .contact {
+  margin-top: 200px; }

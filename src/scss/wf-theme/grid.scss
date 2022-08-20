@@ -2,6 +2,7 @@
     display: grid;
     grid-template:
         "grid__header grid__header" min-content
+        "grid__carousel grid__carousel" auto
         "grid__content grid__content" auto
         "grid__footer grid__footer" min-content / auto;
     height: 100%;
@@ -9,6 +10,7 @@
     @include tablet-landscape {
         grid-template:
             "grid__header grid__header" min-content
+            "grid__carousel grid__carousel" auto
             "grid__content grid__content" auto
             "grid__footer grid__footer" min-content / 250px auto;
     }
@@ -16,6 +18,10 @@
     &__header {
         background-color: $color-grey;
         grid-area: grid__header;
+    }
+
+    &__carousel {
+        grid-area: grid__carousel;
     }
 
     &__content {
