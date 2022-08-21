@@ -50,9 +50,27 @@
     height: auto; }
 
 .grid__content .service {
-  margin-top: 200px; }
+  background-color: #b6c2ca;
+  margin-top: 200px;
+  padding: 50px 0; }
+  .grid__content .service .card-wrapper {
+    align-items: flex-start; }
+  .grid__content .service .title {
+    color: #ffffff; }
+  .grid__content .service .card__header {
+    background-color: #98aab5;
+    border: 0;
+    border-radius: 8px 8px 0 0; }
+  .grid__content .service .card__body {
+    background-color: #ffffff;
+    border: 0;
+    border-radius: 0 0 8px 8px; }
+    .grid__content .service .card__body p {
+      text-align: left; }
+  .grid__content .service .card__header, .grid__content .service .card__body {
+    border-color: #98aab5; }
   .grid__content .service svg {
-    fill: #bec3c7;
+    fill: #98aab5;
     height: 150px; }
 
 .grid__content .contact {

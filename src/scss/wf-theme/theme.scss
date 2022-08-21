@@ -28,7 +28,9 @@ $margin-content: 200px;
     }
 }
 
-.grid__carousel {}
+.grid__carousel {
+
+}
 
 .grid__content {
     .title {
@@ -52,10 +54,44 @@ $margin-content: 200px;
     }
 
     .service {
+        $border-radius: 8px;
+        background-color: $color-grey-light-10;
         margin-top: $margin-content;
+        padding: 50px 0;
+
+        .card-wrapper {
+            align-items: flex-start;
+        }
+
+        .title {
+            color: $color-white
+        }
+
+        .card {
+            &__header {
+                background-color: $color-grey-light-8;
+                border: 0;
+                border-radius: $border-radius $border-radius 0 0;
+            }
+
+            &__body {
+                background-color: $color-white;
+                border: 0;
+                border-radius: 0 0 $border-radius $border-radius;
+
+                p {
+                    text-align: left;
+                }
+            }
+
+            &__header,
+            &__body {
+                border-color: $color-grey-light-8;
+            }
+        }
 
         svg {
-            fill: #bec3c7;
+            fill: $color-grey-light-8;
             height: 150px;
         }
     }
@@ -64,217 +100,3 @@ $margin-content: 200px;
         margin-top: $margin-content;
     }
 }
-
-// strong {
-//     font-family: 'Roboto', sans-serif;
-//     font-weight: bold;
-// }
-
-// .padding {
-//     padding-left: $big;
-//     padding-right: $big;
-// }
-
-// h1,
-// h2 {
-//     color: $color-orange;
-//     font-size: 3rem;
-//     font-weight: 100;
-//     text-align: center;
-// }
-
-// h1,
-// h2,
-// h3,
-// h4,
-// h5,
-// h6,
-// th {
-//     font-family: 'Roboto', sans-serif !important;
-// }
-
-// .loading-main {
-//     background-color: $color-grey;
-
-//     .progress-bar {
-//         background-color: $color-custom;
-//         width: 0;
-//     }
-// }
-
-
-// .menu-main {
-
-//     .bt-toggle {
-//         margin: $regular;
-
-//         &:hover {
-//             border-color: transparent;
-//         }
-
-//         .icon {
-//             height: $big;
-//             width: $big;
-//         }
-//     }
-
-//     .col-2 {
-//         @media only screen and (min-width: $break-point-bi) {
-//             text-align: right;
-//         }
-//     }
-// }
-
-// svg:not(:root) {
-//     overflow: hidden;
-// }
-
-// .icon {
-//     fill: #333333;
-//     width: 100px;
-// }
-
-// .grid {
-//     display: grid;
-//     grid-template-areas: "header""content""footer";
-//     grid-template-rows: min-content auto min-content;
-//     min-height: 100%;
-// }
-
-// .grid__header {
-//     grid-area: header;
-// }
-
-// .grid__content {
-//     grid-area: content;
-// }
-
-// .grid__footer {
-//     background-color: $color-custom;
-//     color: white;
-//     grid-area: footer;
-//     margin-top: $extra-big;
-//     padding: $big;
-//     text-align: right;
-// }
-
-// .menu-main {
-//     background-color: $color-custom;
-
-//     .menu {
-//         width: 100%;
-
-//         li {
-//             margin: 0
-//         }
-//     }
-
-//     @media only screen and (min-width: $break-point-es) {
-
-//         .menu,
-//         .menu ul,
-//         .menu ul li,
-//         .menu ul li .menu-main__bt {
-//             height: auto;
-//         }
-//     }
-
-//     @media only screen and (min-width: $break-point-bi) {
-
-//         .menu,
-//         .menu ul,
-//         .menu ul li,
-//         .menu ul li .menu-main__bt {
-//             height: 100%;
-//         }
-//     }
-// }
-
-// .logo {
-//     background-color: white;
-//     display: inline-flex;
-//     padding: $regular;
-// }
-
-// .menu-main__bt {
-//     align-items: center;
-//     color: white;
-//     display: flex;
-//     padding: $big;
-//     text-decoration: none;
-//     transition: $transition;
-
-//     &:hover {
-//         background-color: $color-custom-darken-3;
-//     }
-// }
-
-
-// .service {
-//     .card {
-//         display: flex;
-//         height: calc(100% - #{$regular * 2});
-//         margin: $regular;
-//     }
-
-//     .card-body {
-//         border: 1px solid $color-grey-light-3 !important;
-//         flex: 1;
-
-//         svg {
-//             fill: $color-grey;
-//             height: 150px;
-//         }
-
-//         p {
-//             text-align: left;
-//         }
-//     }
-
-//     .card__title {
-//         background-color: $color-blue;
-//         color: white;
-//         display: table;
-//         font-family: 'Roboto', sans-serif;
-//         font-size: 1.4rem;
-//         font-weight: 100;
-//         margin: 0;
-//         padding: $big;
-//         width: 100%;
-//     }
-// }
-
-
-// .contact {
-//     * {
-//         text-align: center;
-//     }
-
-//     p {
-//         text-align: center;
-//     }
-
-//     .form {
-//         margin: auto;
-//         max-width: 800px;
-
-//         * {
-//             text-align: left;
-//         }
-
-
-//         .bt {
-//             border-width: 2px;
-//         }
-//     }
-
-//     .notify-list {
-//         float: right;
-//         margin-top: $regular;
-//         width: 100%;
-
-//         li {
-//             float: right;
-//         }
-//     }
-// }

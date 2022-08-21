@@ -91,53 +91,55 @@
 </div>
         </section>
         <section class="grid__carousel">
-            <div class="carousel" data-current-slide="0" id="mainCarousel">
-    <div class="row carousel-slide">
-        <div class="col-es-12">
-            <ul class="carousel-list">
-                
-                
-                <li>
-                    <img src="#" data-img="1.jpg" alt="banner" class="img-responsive">
-                </li>
-                
-                <li>
-                    <img src="#" data-img="2.jpg" alt="banner" class="img-responsive">
-                </li>
-                
-                <li>
-                    <img src="#" data-img="3.jpg" alt="banner" class="img-responsive">
-                </li>
-                
-                <li>
-                    <img src="#" data-img="4.jpg" alt="banner" class="img-responsive">
-                </li>
-                
-                <li>
-                    <img src="#" data-img="5.jpg" alt="banner" class="img-responsive">
-                </li>
-                
-            </ul>
-        </div>
+            
+
+<div class="carousel" data-current-slide="0" data-style="slide" data-autoplay="true">
+    <ul class="carousel__list">
+        
+        <li class="carousel__item">
+            <a href="javascript:void(0);">
+                <img src="./assets/img/banner/desktop/1.jpg" alt="banner">
+            </a>
+        </li>
+        
+        <li class="carousel__item">
+            <a href="javascript:void(0);">
+                <img src="./assets/img/banner/desktop/2.jpg" alt="banner">
+            </a>
+        </li>
+        
+        <li class="carousel__item">
+            <a href="javascript:void(0);">
+                <img src="./assets/img/banner/desktop/3.jpg" alt="banner">
+            </a>
+        </li>
+        
+        <li class="carousel__item">
+            <a href="javascript:void(0);">
+                <img src="./assets/img/banner/desktop/4.jpg" alt="banner">
+            </a>
+        </li>
+        
+        <li class="carousel__item">
+            <a href="javascript:void(0);">
+                <img src="./assets/img/banner/desktop/5.jpg" alt="banner">
+            </a>
+        </li>
+        
+    </ul>
+    <div class="navigation-change button-wrapper row center">
+        <button type="button" class="button button--big" data-id="previous" aria-label="previous">
+            <svg class="icon icon--extra-big">
+                <use xlink:href="./assets/img/icon.svg#previous"></use>
+            </svg>
+        </button>
+        <button type="button" class="button button--big" data-id="next" aria-label="next">
+            <svg class="icon icon--extra-big rotate-180">
+                <use xlink:href="./assets/img/icon.svg#previous"></use>
+            </svg>
+        </button>
     </div>
-    <div class="menu-horizontal carousel-disabled">
-        <ul class="navigation-arrow">
-            <li>
-                <button type="button" class="bt bt-big" data-id="navLeft" aria-label="anterior">
-                    <span class="fa fa-angle-left fa-4x" aria-hidden="true"></span>
-                </button>
-            </li>
-            <li>
-                <button type="button" class="bt bt-big" data-id="navRight" aria-label="próxima">
-                    <span class="fa fa-angle-right fa-4x" aria-hidden="true"></span>
-                </button>
-            </li>
-        </ul>
-    </div>
-    <div class="menu-horizontal text-center carousel-controller-over">
-        <ul class="carousel-controller carousel-controller-white">
-        </ul>
-    </div>
+    <div class="carousel__controller carousel__controller--over button-wrapper row center"></div>
 </div>
         </section>
         <section class="grid__content">
