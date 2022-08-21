@@ -389,8 +389,8 @@ export class LoadingMain {
     }
 }
 window.loadingMain = new LoadingMain();
-window.helper = new Helper();
 window.carousel = new Carousel();
+window.helper = new Helper();
 
 window.addEventListener('load',
     window.carousel.init(),
