@@ -1,5 +1,3 @@
-$margin-content: 200px;
-
 * {
     font-family: sans-serif;
 }
@@ -29,7 +27,9 @@ $margin-content: 200px;
 }
 
 .grid__carousel {
-
+    .navigation-change {
+        display: none;
+    }
 }
 
 .grid__content {
@@ -40,6 +40,8 @@ $margin-content: 200px;
     }
 
     .about {
+        padding: $big;
+
         .flag {
             margin: 40px auto;
             display: grid;
@@ -56,8 +58,8 @@ $margin-content: 200px;
     .service {
         $border-radius: 8px;
         background-color: $color-grey-light-10;
-        margin-top: $margin-content;
-        padding: 50px 0;
+        margin-top: $extra-big;
+        padding: 50px $big;
 
         .card-wrapper {
             align-items: flex-start;
@@ -97,6 +99,13 @@ $margin-content: 200px;
     }
 
     .contact {
-        margin-top: $margin-content;
+        margin-top: $extra-big;
     }
+}
+
+.grid__footer {
+    color: $color-white;
+    margin-top: $extra-big;
+    padding: $big;
+    text-align: right;
 }
