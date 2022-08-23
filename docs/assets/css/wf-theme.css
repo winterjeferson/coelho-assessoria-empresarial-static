@@ -20,6 +20,9 @@
 * {
   font-family: sans-serif; }
 
+body {
+  scroll-behavior: smooth; }
+
 .grid__header .header {
   align-items: center;
   justify-content: space-between; }
