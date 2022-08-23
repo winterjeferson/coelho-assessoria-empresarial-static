@@ -1,41 +1,30 @@
-<article class="container padding contact">
-    Contato
-    <form class="form form-grey row">
-        <div class="form-field col-es-12">
-            <div class="row">
-                <label for="contactName">Nome:</label>
+<article class="container">
+    <h1 class="title">Entre em contato</h1>
+    <p><strong>Fone/Fax:</strong> 55 (51) 3035-3222</p>
+    <p><strong>Celular:</strong> 55 (51) 8161-2222</p>
+    <p>Preencha o formulário abaixo para entrar em contato</p>
+    <form action="https://formspree.io/f/xnqowyzq" method="POST" class="form form--grey">
+        <h2 class="page__sub-title"></h2>
+        <div class="row">
+            <div class="column form__field">
+                <label class="form__label" for="contactName" name="name" aria-label="name">Nome:</label>
+                <input class="form__fill" type="text" id="contactName">
             </div>
-            <div class="row">
-                <input type="text" data-id="fieldName" id="contactName">
-            </div>
-        </div>
-        <div class="form-field col-es-12">
-            <div class="row">
-                <label for="contactEmail">Telefone:</label>
-            </div>
-            <div class="row">
-                <input type="text" data-id="fieldPhone" id="contactPhone" aria-label="phone" data-mask="phone"
-                    placeholder="(00) 00000-0000">
+            <div class="column form__field">
+                <label class="form__label" for="contactEmail">E-mail:</label>
+                <input class="form__fill" type="email" id="contactEmail" name="_replyto" aria-label="Seu e-mail">
             </div>
         </div>
-        <div class="form-field col-es-12">
-            <div class="row">
-                <label for="contactEmail">E-mail:</label>
-            </div>
-            <div class="row">
-                <input type="email" data-id="fieldEmail" id="contactEmail">
+        <div class="row">
+            <div class="column form__field">
+                <label class="form__label" for="contactMessage">Mensagem:</label>
+                <textarea class="form__fill" required="" id="contactMessage" name="message" aria-label="Sua mensagem"></textarea>
             </div>
         </div>
-        <div class="form-field col-es-12">
-            <div class="row">
-                <label for="contactMessage">Mensagem:</label>
+        <div class="row">
+            <div class="column form__field send">
+                <input type="submit" class="button button--regular button--blue" value="Enviar">
             </div>
-            <div class="row">
-                <textarea required="" data-id="fieldMessage" id="contactMessage"></textarea>
-            </div>
-        </div>
-        <div class="form-field col-es-12 text-right">
-            <button type="button" class="bt bt-re bt-outline-grey" data-id="btSend">Enviar</button>
         </div>
     </form>
 </article>

@@ -30,6 +30,10 @@
     .navigation-change {
         display: none;
     }
+
+    .carousel__controller--over {
+        bottom: $big;
+    }
 }
 
 .grid__content {
@@ -100,6 +104,20 @@
 
     .contact {
         margin-top: $extra-big;
+        padding: $big;
+
+        .container {
+            max-width: 800px;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .send {
+            align-items: flex-end;
+            display: flex;
+        }
     }
 }
 

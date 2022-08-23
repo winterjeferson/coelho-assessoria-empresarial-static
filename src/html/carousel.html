@@ -4,9 +4,11 @@
     <ul class="carousel__list">
         {% for item in arr %}
         <li class="carousel__item">
-            <a href="javascript:void(0);">
+            <picture>
+                <source media="(max-width:500px)" srcset="./assets/img/banner/mobile/{{item}}.jpg">
+                <source media="(min-width:501px)" srcset="./assets/img/banner/desktop/{{item}}.jpg">
                 <img src="./assets/img/banner/desktop/{{item}}.jpg" alt="banner">
-            </a>
+            </picture>
         </li>
         {% endfor %}
     </ul>

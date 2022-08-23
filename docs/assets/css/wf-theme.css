@@ -38,6 +38,9 @@
 .grid__carousel .navigation-change {
   display: none; }
 
+.grid__carousel .carousel__controller--over {
+  bottom: 20px; }
+
 .grid__content .title {
   color: #e77e22;
   font-size: 3rem;
@@ -79,7 +82,15 @@
     height: 150px; }
 
 .grid__content .contact {
-  margin-top: 40px; }
+  margin-top: 40px;
+  padding: 20px; }
+  .grid__content .contact .container {
+    max-width: 800px; }
+  .grid__content .contact p {
+    text-align: center; }
+  .grid__content .contact .send {
+    align-items: flex-end;
+    display: flex; }
 
 .grid__footer {
   color: #ffffff;
