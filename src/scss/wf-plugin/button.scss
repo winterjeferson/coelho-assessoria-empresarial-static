@@ -481,6 +481,10 @@
     @include tablet-landscape {
         display: none;
     }
+
+    .icon {
+        pointer-events: none;
+    }
 }
 
 .toggle-menu__content {
@@ -489,4 +493,8 @@
     @include tablet-landscape {
         display: flex;
     }
+}
+
+.toggle-menu__open {
+    display: flex;
 }

@@ -1163,12 +1163,17 @@ small {
   @media (min-width: 1024px) {
     .toggle-menu {
       display: none; } }
+  .toggle-menu .icon {
+    pointer-events: none; }
 
 .toggle-menu__content {
   display: none; }
   @media (min-width: 1024px) {
     .toggle-menu__content {
       display: flex; } }
+
+.toggle-menu__open {
+  display: flex; }
 
 .card {
   max-width: 100%;
