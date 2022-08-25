@@ -43,6 +43,6 @@ gulp.task('deploy', gulp.series(
     'buildJsRemoveCode',
     'buildJsMinify',
     'buildProject',
-    'buildTemplateMinify',
+    // 'buildTemplateMinify',
     'buildImageMinify',
 ));
