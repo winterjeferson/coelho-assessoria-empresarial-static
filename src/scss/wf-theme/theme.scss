@@ -105,11 +105,11 @@ body {
             display: grid;
             grid-row-gap: $regular;
             grid-column-gap: $regular;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
 
             @include tablet {
                 grid-row-gap: 0;
-                grid-template-columns: repeat(6, 1fr);
+                grid-template-columns: repeat(7, 1fr);
             }
 
             img {

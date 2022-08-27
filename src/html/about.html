@@ -1,7 +1,7 @@
  <article class="container">
      <h1 class="title">Sobre nós</h1>
      <p>
-        {{arrDefault.description}}
+         {{arrDefault.description}}
 
          Desenvolvendo um trabalho sério e consistente, colocamos todo o nosso conhecimento e experiência na
          busca de soluções inovadoras e sustentáveis que tragam mais rentabilidade, competitividade e melhor
@@ -88,10 +88,13 @@
                     },
                     {
                         src: 'equador'
+                    },
+                    {
+                        src: 'argentina'
                     }
                 ] %}
          {% for item in arr %}
-         <img src="./assets/img/flag/{{item.src}}.jpg" alt="{{item.src}}">
+         <img src="#" data-src="./assets/img/flag/{{item.src}}.jpg" alt="{{item.src}}" data-lazy-load="true">
          {% endfor %}
      </span>
  </article>
