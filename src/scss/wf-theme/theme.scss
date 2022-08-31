@@ -152,6 +152,10 @@ body {
                     background-color: $color-grey-light-8;
                     border: 0;
                     border-radius: $border-radius $border-radius 0 0;
+
+                    .subtitle {
+                        font-size: 1.5rem;
+                    }
                 }
 
                 &__body {
