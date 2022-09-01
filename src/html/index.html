@@ -1,4 +1,4 @@
-{% from 'nunjucks.html' import arrDefault %}
+{% from 'include/nunjucks.html' import arrDefault %}
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -55,27 +55,27 @@
 </head>
 
 <body>
-    {% include "loading-main.html" %}
+    {% include "include/loading-main.html" %}
     <main class="grid">
         <section class="grid__header" id="header">
-            {% include "menu.html" %}
+            {% include "include/menu.html" %}
         </section>
         <section class="grid__carousel">
-            {% include "carousel.html" %}
+            {% include "include/carousel.html" %}
         </section>
         <section class="grid__content">
             <div class="about" id="about">
-                {% include "about.html" %}
+                {% include "include/about.html" %}
             </div>
             <div class="service" id="service">
-                {% include "service.html" %}
+                {% include "include/service.html" %}
             </div>
             <div class="contact" id="contact">
-                {% include "contact.html" %}
+                {% include "include/contact.html" %}
             </div>
         </section>
         <section class="grid__footer">
-            {% include "signature.html" %}
+            {% include "include/signature.html" %}
         </section>
     </main>
     <script type="module">
